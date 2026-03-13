@@ -22,9 +22,7 @@ products = [Product(id=1, name="Laptop", description="A powerful laptop", price=
             Product(id=4, name="Smartwatch", description="A stylish smartwatch", price=299.99, quantity=5),
             Product(id=5, name="Tablet", description="A versatile tablet", price=399.99, quantity=8),
             Product(id=6, name="Camera", description="A high-resolution camera", price=899.99, quantity=12),
-            Product(id=8, name="Monitor", description="A 4K monitor", price=299.99, quantity=6),
-            Product(id=9, name="Keyboard", description="A mechanical keyboard", price=89.99, quantity=25)]
-
+            Product(id=8, name="Monitor", description="A 4K monitor", price=299.99, quantity=6)]
 def init_db():
     db = session()
     count = db.query(database_models.Product).count()
